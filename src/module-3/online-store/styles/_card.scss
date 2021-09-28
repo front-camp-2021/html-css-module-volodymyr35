@@ -1,0 +1,94 @@
+.card {
+  width: 100%;
+  height: 486px;
+  margin: 0 auto;
+  border-radius: $border-radius;
+  overflow: hidden;
+  background-color: $background-color;
+  box-shadow: $shadow;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    height: 438px;
+  }
+
+  &__img > img {
+    max-width: 100%;
+    min-height: fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+
+  &__info {
+    font-size: 12px;
+    font-weight: 300;
+    word-break: break-word;
+  }
+
+  &__rate-and-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: normal;
+    align-self: center;
+  }
+
+  &__product--rate {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $background-color;
+    border-radius: 3px;
+    width: 65px;
+    padding: 7px;
+    border: none;
+    line-height: 1.2;
+  }
+
+  &__rate {
+    margin-top: -2px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    background: $secondary-color;
+  }
+
+  &__btn--primary {
+    background-color: $primary-color;
+    color: $background-color;
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__icon {
+    display: inline-block;
+  }
+}

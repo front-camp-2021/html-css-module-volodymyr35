@@ -1,0 +1,34 @@
+.main {
+  max-width: 1256px;
+  width: 70 vw;
+}
+
+button.wishlist-btn {
+  background: $primary-color;
+}
+
+.search-bar {
+  width: 100%;
+  margin: 28px 0;
+  position: relative;
+  input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $background-color;
+    font-family: $font-style;
+    font-size: 22px;
+    font-weight: 300;
+    box-shadow: $shadow;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 17px;
+    background-color: transparent;
+    border: none;
+  }
+}
