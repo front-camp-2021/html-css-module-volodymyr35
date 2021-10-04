@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  padding: 28px 20px 0px;
+  background-color: $body-color;
+
+  &__inner {
+    max-width: 1844px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content > h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #7e72f2;
+    margin-left: 22px;
+  }
+}
+
+.bread-crumbs {
+  display: inline-flex;
+  width: 290px;
+  justify-content: space-between;
+  margin-top: 34px;
+  margin-bottom: 44px;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #7e72f2;
+
+    &.active {
+      pointer-events: none;
+      color: #000;
+    }
+  }
+}

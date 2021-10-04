@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  column-gap: 28px;
+  padding: 0px 20px;
+}
+
+.subtitle-with-button {
+  display: flex;
+  justify-content: space-between;
+
+  & > h3 {
+    font-size: 18px;
+    font-weight: 400;
+    align-self: flex-end;
+  }
+
+  & > button {
+    padding: 8px 14px;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    border: none;
+    box-shadow: $shadow;
+  }
+
+  & > button > img {
+    margin-top: 4px;
+  }
+}
+
+.inner-label {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}

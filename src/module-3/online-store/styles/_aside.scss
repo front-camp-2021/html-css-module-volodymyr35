@@ -1,0 +1,58 @@
+.filters {
+  width: 30vw;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    padding: 20px 42px 20px 42px;
+    margin: 28px 0;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    flex-grow: 1;
+  }
+
+  &__divider {
+    margin: 28px 0;
+    height: 1px;
+    background-color: rgba(#000, 0.15);
+    border: none;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
+
+.filters__card > section,
+.filters__divider {
+  width: 375px;
+  max-width: 100%;
+}
+
+.filters__list li:not(li:first-child):not(li:last-child) {
+  padding: 10px 0;
+}
+
+.filters__list li:first-child {
+  padding-bottom: 10px;
+}
+
+.filters__list li:last-child {
+  padding-top: 10px;
+}
+
+.filters__clear-all {
+  width: 100%;
+  font-size: 18px;
+  padding: 17px;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  color: $background-color;
+  border-radius: $border-radius;
+  border: none;
+  box-shadow: $shadow;
+}
